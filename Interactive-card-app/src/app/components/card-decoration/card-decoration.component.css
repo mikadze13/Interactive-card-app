@@ -6,8 +6,8 @@
 
 .card-front,
 .card-back {
-    max-width: 28rem;
-    height: 15.5rem;
+    max-width: 420px;
+    height: 210px;
     border-radius: 10px;
     background-size: cover;
     color: var(--White);

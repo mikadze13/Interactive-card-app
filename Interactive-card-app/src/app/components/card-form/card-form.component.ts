@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class CardFormComponent {
 
+
+  inppp(event:any){
+    console.log(event)
+  }
 }
