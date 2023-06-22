@@ -3,13 +3,13 @@
         <form action="" class="cardForm">
             <label class="labelname">
                 Cardholder Name
-                <input type="text" placeholder="e.g. Jane Appleseed" name="name" class="card-input" [(ngModel)]="name">
+                <input type="text" placeholder="e.g. Jane Appleseed" name="name" class="card-input" >
             </label>
-            <p>{{name}}</p>
+            
             <label class="labelnumber">
                 Card Number
                 <input type="text" placeholder="e.g. 1234 5678 9123 0000" name="number" class="card-input"
-                    minlength="19">
+                    minlength="19" [(ngModel)]="data" (ngModelChange)="updateCardNumber()">
             </label>
 
 
@@ -18,8 +18,8 @@
             <div class="cvc-mmyy">
                 <label class="labelmm labelyy">Exp. Date (MM/YY)
                     <div>
-                        <input type="text" placeholder="MM" name="mm" class="card-input">
-                        <input type="text" placeholder="YY" name="yy" class="card-input">
+                        <input type="text" placeholder="MM" name="mm" class="card-input" >
+                        <input type="text" placeholder="YY" name="yy" class="card-input" >
                     </div>
                 </label>
                 <label class="labelcvc">CVC
