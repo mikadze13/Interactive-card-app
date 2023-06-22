@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { DataService } from 'src/app/core/data.service';
+import { Info } from 'src/app/core/info.model';
+import { DataService } from 'src/app/core/service/data.service';
 
 @Component({
   selector: 'app-card-form',
@@ -7,18 +8,26 @@ import { DataService } from 'src/app/core/data.service';
   styleUrls: ['./card-form.component.css']
 })
 export class CardFormComponent {
- 
-  data: string = ''
+  cardMonth:string = ''
+  cardYear:string = ''
+  carcCvc:string = ''
+  cardNumber: string = ''
+  cardHolderName:string = ''
   constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
 
   }
+  // cardholder name
+  updateData() {
+  const data: [string, string, string, string, string] = [
+    this.cardMonth,
+    this.cardYear,
+    this.carcCvc,
+    this.cardNumber,
+    this.cardHolderName
   
-  
-  // card number data
-  updateCardNumber() {
-    this.dataService.setData(this.data);
-  }
-  
+  ];
+  this.dataService.setData(data);
+}
 }

@@ -5,11 +5,11 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class DataService {
-  private dataSubject = new BehaviorSubject<string>('');
+  private dataSubject = new BehaviorSubject<[string, string, string, string, string]>(['', '', '', '', '']);
   constructor() { }
 
   //  set data
-  setData(data: string) {
+  setData(data: [string, string, string, string, string]) {
     this.dataSubject.next(data);
   }
   // get Data
