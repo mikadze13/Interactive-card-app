@@ -1,9 +1,15 @@
 .main{
     height: 100%;
-    width: 100%;
-    /* display: flex; */
-    /* align-items: center;
-    justify-content: center; */
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-image: url('../assets/images/bg-desktop.png');
     background-repeat: no-repeat;
 } 
+app-card-decoration{
+    width: 100%;
+}
+app-card-form{
+    width: 100%;
+}

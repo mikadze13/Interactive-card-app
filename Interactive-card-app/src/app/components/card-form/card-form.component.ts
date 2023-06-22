@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./card-form.component.css']
 })
 export class CardFormComponent {
-
+  name!:string 
 
   inppp(event:any){
     console.log(event)

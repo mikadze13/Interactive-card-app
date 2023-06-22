@@ -6,4 +6,12 @@
 html,body{
     min-height: 100% !important;
     height: 100%;
+    font-family: Space Grotesk,sans-serif;
+    box-sizing: border-box;
+}
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
 }

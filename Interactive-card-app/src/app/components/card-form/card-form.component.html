@@ -1,17 +1,32 @@
-<form action="" >
-    <label for="">CARDHOLDER NAME</label>
-    <input type="text" >
+<div class="main">
+    <div>
+        <form action="" class="cardForm">
+            <label class="labelname">
+                Cardholder Name
+                <input type="text" placeholder="e.g. Jane Appleseed" name="name" class="card-input" [(ngModel)]="name">
+            </label>
+            <p>{{name}}</p>
+            <label class="labelnumber">
+                Card Number
+                <input type="text" placeholder="e.g. 1234 5678 9123 0000" name="number" class="card-input"
+                    minlength="19">
+            </label>
 
-    <label for="">CARD NUMBER</label>
-    <input type="text">
 
-    <label for="">EXP. DATE </label>
-    <input type="text">
 
-    <label for="">(MM/YY)</label>
-    <input type="number">
 
-    <label for="">CVC</label>
-    <input type="number">
-
-</form>
+            <div class="cvc-mmyy">
+                <label class="labelmm labelyy">Exp. Date (MM/YY)
+                    <div>
+                        <input type="text" placeholder="MM" name="mm" class="card-input">
+                        <input type="text" placeholder="YY" name="yy" class="card-input">
+                    </div>
+                </label>
+                <label class="labelcvc">CVC
+                    <input type="text" placeholder="e.g. 123" name="cvc" class="card-input">
+                </label>
+            </div>
+            <button type="submit" class="btn-submit btn-primary">Confirm</button>
+        </form>
+    </div>
+</div>
