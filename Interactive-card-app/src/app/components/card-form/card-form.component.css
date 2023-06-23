@@ -1,6 +1,7 @@
 .main {
     width: 100%;
 }
+
 .cardForm {
     display: flex;
     flex-direction: column;
@@ -8,6 +9,7 @@
     margin-left: 10%;
     padding: 1rem;
 }
+
 .cardForm label {
     margin-bottom: 16px;
     gap: 14px;
@@ -18,29 +20,34 @@
     color: #21092f;
     font-size: 15px;
 }
- 
+
 .card-input {
     padding: 17px;
     border: 1px solid #8e8593;
     border-radius: 7px;
     transition: all .3s ease-in-out;
 }
-.card-input:hover{
+
+.card-input:hover {
     border-color: #8b76fe;
 }
+
 .cvc-mmyy {
     display: flex;
     margin-bottom: 26px;
     position: relative;
     gap: 10px;
 }
+
 .labelmm div {
     display: flex;
     gap: 10px;
 }
+
 .labelmm input {
     width: 100%;
 }
+
 .btn-primary {
     background: #21092f;
     border: none;
@@ -51,6 +58,16 @@
     font-size: 18px;
     transition: all .3s ease-in-out;
 }
-.btn-primary:hover{
+
+.btn-primary:hover {
     background: #382444;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.exp-date-inp{
+    display: flex; 
 }

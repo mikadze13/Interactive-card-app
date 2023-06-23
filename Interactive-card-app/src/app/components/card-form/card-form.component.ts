@@ -1,4 +1,5 @@
-import { Component } from '@angular/core'; 
+import { Component } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { DataService } from 'src/app/core/service/data.service';
 
 @Component({
@@ -12,6 +13,14 @@ export class CardFormComponent {
   carcCvc: string = ''
   cardNumber: string = ''
   cardHolderName: string = ''
+
+  formData = {
+    name: '',
+    number: '',
+    mm: '',
+    yy: '',
+    cvc: ''
+  };
   constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
@@ -43,7 +52,8 @@ export class CardFormComponent {
     this.dataService.setCardCvcData(this.carcCvc)
   }
 
-
-
+  onCardForm(formData: any) {
+    this.formData.cvc = ''
+  }
 
 }
