@@ -8,26 +8,18 @@ import { DataService } from 'src/app/core/service/data.service';
   styleUrls: ['./card-form.component.css']
 })
 export class CardFormComponent {
-  cardMonth:string = ''
-  cardYear:string = ''
-  carcCvc:string = ''
+  cardMonth: string = ''
+  cardYear: string = ''
+  carcCvc: string = ''
   cardNumber: string = ''
-  cardHolderName:string = ''
+  cardHolderName: string = ''
   constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
 
   }
   // cardholder name
-  updateData() {
-  const data: [string, string, string, string, string] = [
-    this.cardMonth,
-    this.cardYear,
-    this.carcCvc,
-    this.cardNumber,
-    this.cardHolderName
-  
-  ];
-  this.dataService.setData(data);
-}
+  updateCardNumber() {
+    this.dataService.setCardNumberData(this.cardNumber)
+  }
 }

@@ -7,12 +7,12 @@ import { DataService } from 'src/app/core/service/data.service';
   styleUrls: ['./card-decoration.component.css']
 })
 export class CardDecorationComponent implements OnInit{
-  sharedData: [string, string, string, string, string] = ['', '', '', '', ''];
-  
+   
+  sharedData:string = ''
   constructor(private dataService:DataService){}
 
   ngOnInit() {
-    this.dataService.getData().subscribe(data => {
+    this.dataService.getCardNumberData().subscribe(data => {
       this.sharedData = data; 
     });
      
