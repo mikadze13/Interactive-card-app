@@ -5,11 +5,11 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class DataService {
-  private cardNumberSubject = new BehaviorSubject<string>('');
-  private CardHolderSubject = new BehaviorSubject<string>('');
-  private CardMonthSubject = new BehaviorSubject<string>('');
-  private CardYearsubject = new BehaviorSubject<string>('');
-  private CardCvcSubject = new BehaviorSubject<string>('');
+  private cardNumberSubject = new BehaviorSubject<string>('VAZHA MIKADZE');
+  private CardHolderSubject = new BehaviorSubject<string>('3333 3333 3333 3333');
+  private CardMonthSubject = new BehaviorSubject<string>('06');
+  private CardYearsubject = new BehaviorSubject<string>('2023');
+  private CardCvcSubject = new BehaviorSubject<string>('123');
   constructor() { }
 
   // set Card holder data
@@ -18,7 +18,7 @@ export class DataService {
   }
   // get Card holder data
   getCardHolderName() {
-    return this.cardNumberSubject.asObservable()
+    return this.CardHolderSubject.asObservable()
   }
 
 

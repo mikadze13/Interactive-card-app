@@ -1,14 +1,17 @@
 <div class="main-card">
     <div class="card-front" >
         <div class="number">
-            <span>{{sharedData}}</span>
-            <p>JANE APPLESEE</p>
-            <p>00/00</p>
+            <p>{{cardHolderName}}</p>
+            <p>{{cardNumber}}</p>
+            <div> 
+            <p>{{cardMonth}} / {{cardYear}}</p>
+             
+        </div>
         </div>
     </div>
     <div class="card-back">
         <div class="cvc">
-            <span>000</span>
+            <p>{{cardCvc}}</p>
         </div>
     </div>
 </div>

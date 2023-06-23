@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import { Info } from 'src/app/core/info.model';
+import { Component } from '@angular/core'; 
 import { DataService } from 'src/app/core/service/data.service';
 
 @Component({
@@ -18,8 +17,33 @@ export class CardFormComponent {
   ngOnInit(): void {
 
   }
-  // cardholder name
+
+  // update card Holder name
+  updateCardHolderName() {
+    this.dataService.setCardHolderName(this.cardHolderName)
+  }
+
+  // update cardNumber name
   updateCardNumber() {
     this.dataService.setCardNumberData(this.cardNumber)
   }
+
+  // update Month data
+  updateMonthData() {
+    this.dataService.setCardMonthData(this.cardMonth)
+  }
+
+  // update year data
+  updateYearData() {
+    this.dataService.setCardYearData(this.cardYear)
+  }
+
+  // update CVC number
+  updateCvcData() {
+    this.dataService.setCardCvcData(this.carcCvc)
+  }
+
+
+
+
 }
