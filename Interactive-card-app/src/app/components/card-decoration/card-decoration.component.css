@@ -1,5 +1,5 @@
 .main-card {
- 
+
     width: 100%;
     padding: 2rem;
 }
@@ -10,7 +10,7 @@
     height: 210px;
     border-radius: 10px;
     background-size: cover;
-    color:white;
+    color: white;
     position: relative;
     padding: 32px;
 }
@@ -24,6 +24,7 @@
     justify-content: flex-end;
     margin: 0 auto 32px;
 }
+
 .card-back {
     background-image: url('../../../assets/images/bg-card-back.png');
     background-size: contain;
@@ -31,12 +32,31 @@
     background-repeat: no-repeat;
     margin: 0 2rem 0 auto;
 }
+
+.number > p {
+    font-size: clamp(22px, 2.5vw, 27px);
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+.card-name{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cvc{
+    position: absolute;
+    right: 60px;
+    top: 122px;
+    font-size: 24px;
+}
 @media screen and (max-width:1400px) {
-    
-    .card-front{
+
+    .card-front {
         transform: scale(.85);
     }
-    .card-back{
+
+    .card-back {
         transform: scale(.85);
     }
 }

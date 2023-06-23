@@ -5,11 +5,11 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class DataService {
-  private cardNumberSubject = new BehaviorSubject<string>('VAZHA MIKADZE');
-  private CardHolderSubject = new BehaviorSubject<string>('3333 3333 3333 3333');
-  private CardMonthSubject = new BehaviorSubject<string>('06');
-  private CardYearsubject = new BehaviorSubject<string>('2023');
-  private CardCvcSubject = new BehaviorSubject<string>('123');
+  private cardNumberSubject = new BehaviorSubject<string>('0000 0000 0000 000');
+  private CardHolderSubject = new BehaviorSubject<string>('VAZHA MIKADZE');
+  private CardMonthSubject = new BehaviorSubject<string>('00');
+  private CardYearsubject = new BehaviorSubject<string>('00');
+  private CardCvcSubject = new BehaviorSubject<string>('000');
   constructor() { }
 
   // set Card holder data
