@@ -2,8 +2,7 @@
     height: 100%;
     width: 100%; 
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center; 
     background-image: url('../assets/images/bg-desktop.png');
     background-repeat: no-repeat;
 } 
@@ -12,4 +11,12 @@ app-card-decoration{
 }
 app-card-form{
     width: 100%;
+}
+
+@media screen and (max-width:884px){
+    .main{ 
+        flex-direction: column;
+        background-image: url('../assets/images/bg-mobile.png');
+        background-size: 100% 309px;
+    }
 }

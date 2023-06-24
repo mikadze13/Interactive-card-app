@@ -6,8 +6,8 @@
 
 .card-front,
 .card-back {
-    max-width: 420px;
-    height: 210px;
+    max-width: 392px;
+    height: 191px;
     border-radius: 10px;
     background-size: cover;
     color: white;
@@ -33,23 +33,25 @@
     margin: 0 2rem 0 auto;
 }
 
-.number > p {
+.number>p {
     font-size: clamp(22px, 3.5vw, 34px);
     letter-spacing: 4px;
     margin-bottom: 25px;
 }
-.card-name{
+
+.card-name {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.cvc{
+.cvc {
     position: absolute;
     right: 60px;
-    top: 122px;
+    top: 113px;
     font-size: 24px;
 }
+
 @media screen and (max-width:1400px) {
 
     .card-front {
@@ -58,5 +60,64 @@
 
     .card-back {
         transform: scale(.85);
+    }
+}
+
+@media screen and (max-width:884px) {
+    .main-card {
+        width: auto;
+        padding: 0;
+    }
+
+    .card-front {
+        top: 151px;
+        right: 76px;
+        z-index: 11;
+        margin: 0 auto;
+    }
+
+    .card-back {
+        top: -233px;
+        z-index: 10;
+        left: 68px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:575px) {
+
+    .card-front,
+    .card-back {
+        width: 345px;
+        height: 173px;
+    }
+
+    .card-back {
+        top: -207px;
+    }
+}
+
+
+@media screen and (max-width:515px) {
+
+    .card-front,
+    .card-back {
+        width: 305px;
+        height: 153px;
+    }
+
+    .card-back {
+        top: -207px;
+        left: 32px;
+    }
+
+    .card-front {
+        top: 123px;
+        right: 39px;
+    }
+
+    .cvc {
+        right: 45px;
+        top: 94px;
     }
 }

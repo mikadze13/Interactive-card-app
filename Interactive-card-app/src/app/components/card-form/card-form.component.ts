@@ -52,8 +52,8 @@ export class CardFormComponent {
     this.dataService.setCardCvcData(this.carcCvc)
   }
 
-  onCardForm(formData: any) {
-    this.formData.cvc = ''
+  onCardForm(formData: any) { 
+     
   }
 
 }

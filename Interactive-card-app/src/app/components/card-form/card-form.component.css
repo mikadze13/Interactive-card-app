@@ -71,3 +71,14 @@
 .exp-date-inp{
     display: flex; 
 }
+
+
+@media screen and (max-width:884px){
+    .cardForm{
+        margin-left: 0;
+        max-width: 100%; 
+    }
+    .cardForm label{
+        width: 100%;
+    }
+}
