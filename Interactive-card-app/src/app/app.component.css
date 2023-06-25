@@ -4,8 +4,25 @@
     display: flex;
     align-items: center; 
     background-image: url('../assets/images/bg-desktop.png');
+     
     background-repeat: no-repeat;
+    /* animation-name: back; */
+    
 } 
+
+@keyframes back {
+    0%{
+        background-size:auto ;
+    }
+    50%{
+        background-size: 70%;
+    }
+    100%{
+        background-size: 100%; 
+    }
+    
+}
+
 app-card-decoration{
     width: 100%;
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { DataService } from 'src/app/core/service/data.service';
 
@@ -8,6 +8,7 @@ import { DataService } from 'src/app/core/service/data.service';
   styleUrls: ['./card-form.component.css']
 })
 export class CardFormComponent {
+  @Output() newItemEvent = new EventEmitter<any>();
   cardMonth: string = ''
   cardYear: string = ''
   carcCvc: string = ''
@@ -53,7 +54,7 @@ export class CardFormComponent {
   }
 
   onCardForm(formData: any) { 
-     
+    this.newItemEvent.emit(formData);
   }
 
 }

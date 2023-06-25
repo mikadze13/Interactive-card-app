@@ -1,8 +1,8 @@
-<div class="main">
+<div class="main" #styledDiv>
    
-    <app-card-decoration></app-card-decoration>
+    <app-card-decoration ></app-card-decoration>
   
  
-    <app-card-form></app-card-form>
+    <app-card-form (newItemEvent)="eventData($event)"></app-card-form>
    
 </div>
