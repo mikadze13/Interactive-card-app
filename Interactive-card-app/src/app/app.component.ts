@@ -8,8 +8,8 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 })
 export class AppComponent {
   title = 'Interactive-card-app';
-  viewThanksCard: boolean = true;
-  viewForm: boolean = false;
+  viewThanksCard: boolean = false;
+  viewForm: boolean = true;
   @ViewChild('styledDiv', { static: true })
   styledDiv!: ElementRef;
   @Input() event: any;
@@ -21,7 +21,7 @@ export class AppComponent {
     this.viewForm = false;
 
   }
-  
+
   continue() {
     this.viewThanksCard = false;
     this.viewForm = true
