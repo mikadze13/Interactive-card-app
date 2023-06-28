@@ -30,6 +30,16 @@ app-card-form{
     width: 100%;
 }
 
+
+.thanks{
+    width: 100%;
+    transition: transform .35s ease-in-out;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+}
+
+
 @media screen and (max-width:884px){
     .main{ 
         flex-direction: column;

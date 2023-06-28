@@ -3,6 +3,13 @@
     <app-card-decoration ></app-card-decoration>
   
  
-    <app-card-form (newItemEvent)="eventData($event)"></app-card-form>
+    <app-card-form (newItemEvent)="eventData($event)" *ngIf="viewForm"></app-card-form>
+
+    <div class="thanks" *ngIf="viewThanksCard">
+        <div class="text">
+            <h2>thanks</h2>
+            <button (click)="continue()">continue</button>
+        </div>
+    </div>
    
 </div>
