@@ -121,3 +121,15 @@
         top: 94px;
     }
 }
+
+@media screen and (max-width:420px) {
+    .card-front{
+        left:  0;
+        width: auto;
+    }
+    .card-back{
+        left: 0;
+        width: auto;
+    }
+     
+}
