@@ -1,17 +1,41 @@
-.main{
+.main {
     height: 100%;
-    width: 100%; 
+    width: 100%;
     display: flex;
-    align-items: center; 
+    align-items: center;
     background-image: url('../assets/images/bg-desktop.png');
-     
-    background-repeat: no-repeat;
-    /* animation-name: back; */
-    
-} 
 
+    background-repeat: no-repeat;
+
+    /* animation-name: back;
+    animation-duration: 2s;
+    animation-fill-mode: forwards; */
+    /* animation-name: back; */
+
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+}
+.text p:first-of-type{
+    margin-top: 28px;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+.text p:last-of-type{
+    opacity: .8;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.btn-primary{
+    width: 288px;
+}
 @keyframes back {
-    0%{
+
+    /* 0%{
         background-size:auto ;
     }
     50%{
@@ -19,29 +43,37 @@
     }
     100%{
         background-size: 100%; 
+    } */
+    /* from {
+        background-size: auto;
     }
-    
+
+    to {
+        background-size: 100%;
+    } */
+
 }
 
-app-card-decoration{
+app-card-decoration {
     width: 100%;
 }
-app-card-form{
+
+app-card-form {
     width: 100%;
 }
 
 
-.thanks{
+.thanks {
     width: 100%;
     transition: transform .35s ease-in-out;
     display: flex;
-    align-items: center ;
+    align-items: center;
     justify-content: center;
 }
 
 
-@media screen and (max-width:884px){
-    .main{ 
+@media screen and (max-width:884px) {
+    .main {
         flex-direction: column;
         background-image: url('../assets/images/bg-mobile.png');
         background-size: 100% 309px;

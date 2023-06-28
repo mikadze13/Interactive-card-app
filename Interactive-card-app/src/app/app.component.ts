@@ -1,4 +1,5 @@
 import { Component, ElementRef, Input, Renderer2, ViewChild } from '@angular/core';
+import { trigger, state, style, animate, transition } from '@angular/animations';
 
 @Component({
   selector: 'app-root',
@@ -7,8 +8,8 @@ import { Component, ElementRef, Input, Renderer2, ViewChild } from '@angular/cor
 })
 export class AppComponent {
   title = 'Interactive-card-app';
-  viewThanksCard: boolean = false;
-  viewForm: boolean = true;
+  viewThanksCard: boolean = true;
+  viewForm: boolean = false;
   @ViewChild('styledDiv', { static: true })
   styledDiv!: ElementRef;
   @Input() event: any;
@@ -16,19 +17,11 @@ export class AppComponent {
   constructor(private renderer: Renderer2) { }
 
   eventData(updatedData: any) {
-    console.log("click")
-    const divElement = this.styledDiv.nativeElement;
-    this.renderer.setStyle(divElement, 'background-size', '100%')
-    this.renderer.setStyle(divElement, 'transition', '.7s cubic-bezier(.36,.07,.19,.97) both;')
-
-    setTimeout(() => {
-      this.viewThanksCard = true;
-      this.viewForm = false;
-      this.renderer.setStyle(divElement, 'background-size', 'auto')
-    }, 1000);
-
+    this.viewThanksCard = true;
+    this.viewForm = false;
 
   }
+  
   continue() {
     this.viewThanksCard = false;
     this.viewForm = true

@@ -15,3 +15,17 @@ button, input, optgroup, select, textarea {
     line-height: 1.15;
     margin: 0;
 }
+.btn-primary {
+    background: #21092f;
+    border: none;
+    padding: 17px 20px;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 18px;
+    transition: all .3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background: #382444;
+}

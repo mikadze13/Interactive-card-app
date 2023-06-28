@@ -48,20 +48,7 @@
     width: 100%;
 }
 
-.btn-primary {
-    background: #21092f;
-    border: none;
-    padding: 17px 20px;
-    color: white;
-    cursor: pointer;
-    border-radius: 6px;
-    font-size: 18px;
-    transition: all .3s ease-in-out;
-}
-
-.btn-primary:hover {
-    background: #382444;
-}
+ 
 
 .error-message {
     color: red;
